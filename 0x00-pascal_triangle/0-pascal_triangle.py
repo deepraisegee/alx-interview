@@ -9,7 +9,7 @@ def pascal_triangle(n):
 
     for i in range(1, n):
         prev_row = triangle[i - 1]
-        # Create the next row by adding pairs of adjacent elements from the previous row
+
         row = (
             [1]
             + [prev_row[j] + prev_row[j + 1] for j in range(len(prev_row) - 1)]
